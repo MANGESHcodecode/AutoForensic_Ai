@@ -1,0 +1,29 @@
+# Datasets
+CarDD_release/
+CarDD_YOLO_Format/
+# Dataset archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ML model files
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
+*.pkl
+
+# Python environment
+myenv/
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
