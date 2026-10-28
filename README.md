@@ -1,2 +1,2 @@
 # AutoForensic
-car
+An Ai powered car damage assessment system
