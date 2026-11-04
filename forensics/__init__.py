@@ -20,6 +20,9 @@ from forensics.phash import PerceptualHasher
 from forensics.ai_detector import AIDetector
 from forensics.cost_estimator import RepairCostEstimator
 from forensics.pipeline import ForensicPipeline
+from forensics.damage_detector import DamageDetector
+from forensics.depth_estimator import DepthEstimator
+from forensics.boodmo_catalog import lookup_boodmo_part, BoodmoPart
 
 __all__ = [
     "FileValidator",
@@ -29,5 +32,9 @@ __all__ = [
     "AIDetector",
     "RepairCostEstimator",
     "ForensicPipeline",
+    "DamageDetector",
+    "DepthEstimator",
+    "lookup_boodmo_part",
+    "BoodmoPart",
 ]
 

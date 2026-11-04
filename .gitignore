@@ -33,3 +33,9 @@ best/
 
 # Generated forensic outputs
 forensic_output/
+
+# Temporary scratch & generated web artifacts
+scratch/
+scratch_dent_test.jpg
+web/static/artifacts/
+tests/test_forensic_output/

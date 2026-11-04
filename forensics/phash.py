@@ -314,6 +314,26 @@ class PerceptualHasher:
         self._registry[hex_val] = source
         logger.info("Registered pHash %s from source: %s", hex_val, source)
 
+    def unregister_hash(
+        self,
+        hash_val: Union[PHashResult, str],
+    ) -> bool:
+        """
+        Remove a hash from the in-memory duplicate registry.
+
+        Args:
+            hash_val: PHashResult or hex string to remove.
+
+        Returns:
+            True if found and removed, False otherwise.
+        """
+        hex_val = hash_val.hash_hex if isinstance(hash_val, PHashResult) else str(hash_val)
+        if hex_val in self._registry:
+            del self._registry[hex_val]
+            logger.info("Unregistered pHash %s from duplicate registry", hex_val)
+            return True
+        return False
+
     def check_duplicate(
         self,
         hash_result: Union[PHashResult, str],
